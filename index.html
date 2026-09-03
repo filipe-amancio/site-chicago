@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chicago Burger — American Urban Burger</title>
+<meta name="description" content="Chicago Burger. Smash burgers artesanais com atitude urbana americana. Peça agora ou visite nossa casa.">
+<meta name="theme-color" content="#050505">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important;}.menu-list{display:flex!important}</style></noscript>
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="topo">
+  <div class="nav-shell">
+    <a href="#topo" class="brand" aria-label="Chicago Burger — início">
+      <svg class="brand-badge" viewBox="0 0 120 120" aria-hidden="true">
+        <circle cx="60" cy="60" r="58" fill="#050505" stroke="#fff" stroke-width="2"/>
+        <circle cx="60" cy="60" r="49" fill="none" stroke="#fff" stroke-width="0.75" opacity="0.45"/>
+        <g class="badge-star" transform="translate(20,38)"><use href="#icon-star" width="12" height="12"/></g>
+        <g class="badge-star" transform="translate(84,38)"><use href="#icon-star" width="12" height="12"/></g>
+        <text x="60" y="47" text-anchor="middle" class="badge-chicago">CHICAGO</text>
+        <line x1="18" y1="53" x2="102" y2="53" stroke="#fff" stroke-width="1.4"/>
+        <text x="60" y="72" text-anchor="middle" class="badge-burger">BURGER</text>
+        <line x1="30" y1="80" x2="90" y2="80" stroke="#fff" stroke-width="1"/>
+      </svg>
+      <span class="brand-word">Chicago<em>Burger</em></span>
+    </a>
+
+    <nav class="main-nav" id="menu-principal" data-state="closed">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#vitrine">Vitrine</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+      </ul>
+      <a class="btn btn-ghost nav-cta" href="#pedir">Pedir agora</a>
+    </nav>
+
+    <button class="burger-toggle" id="burgerToggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-label="Abertura">
+    <div class="hero-stars" aria-hidden="true"></div>
+    <div class="hero-inner reveal">
+      <p class="eyebrow"><svg class="icon-inline" aria-hidden="true"><use href="#icon-flame"/></svg> Smash burger urbano desde 2019</p>
+
+      <h1 class="hero-title">
+        <span class="hero-line hero-line-1">
+          <svg class="hero-star" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-star"/></svg>
+          CHICAGO
+          <svg class="hero-star" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-star"/></svg>
+        </span>
+        <span class="hero-rule" aria-hidden="true"></span>
+        <span class="hero-line hero-line-2">BURGER</span>
+        <span class="hero-rule hero-rule-wide" aria-hidden="true"></span>
+      </h1>
+
+      <p class="hero-sub">Hambúrguer artesanal com estética americana urbana. Chapa quente, carne 100% smash e a atitude da cidade que nunca desliga.</p>
+
+      <div class="hero-actions">
+        <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
+        <a id="pedir" href="https://wa.me/5561981047360" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg class="icon-inline" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+          Pedir no WhatsApp
+        </a>
+      </div>
+    </div>
+    <a href="#sobre" class="scroll-cue" aria-label="Rolar para baixo"><span></span></a>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>SMASH BURGER</span><span>★</span><span>URBAN STYLE</span><span>★</span><span>CHICAGO</span><span>★</span><span>AMERICAN GRILL</span><span>★</span>
+      <span>SMASH BURGER</span><span>★</span><span>URBAN STYLE</span><span>★</span><span>CHICAGO</span><span>★</span><span>AMERICAN GRILL</span><span>★</span>
+    </div>
+  </div>
+
+  <!-- ============ SOBRE ============ -->
+  <section class="about" id="sobre">
+    <div class="section-shell about-grid">
+      <div class="about-copy reveal">
+        <p class="kicker">A marca</p>
+        <h2 class="section-title">Feita pra quem gosta<br>de cidade grande.</h2>
+        <p class="about-text">A Chicago Burger nasceu da chapa: carne smash, casca crocante, queijo derretendo na borda. Sem frescura, sem cor de sobra — só preto, branco e a fome de fazer o melhor burger urbano da cidade.</p>
+        <p class="about-text">Cada lanche sai da grelha com o mesmo compromisso que está no nosso símbolo: impacto, autenticidade e presença. Isso não é fast-food descartável — é a nossa assinatura.</p>
+        <ul class="trait-tags">
+          <li>Urbana</li>
+          <li>Forte</li>
+          <li>Premium</li>
+          <li>Americana</li>
+        </ul>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat-card">
+          <span class="stat-num">100<small>%</small></span>
+          <span class="stat-label">Smash na chapa</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">06<small>min</small></span>
+          <span class="stat-label">Da chapa à mesa</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">2019</span>
+          <span class="stat-label">Ano de fundação</span>
+        </div>
+        <div class="stat-card stat-card--accent">
+          <span class="stat-num">★ ★ ★</span>
+          <span class="stat-label">Receita própria, sem atalho</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CARDÁPIO ============ -->
+  <section class="menu" id="cardapio">
+    <div class="section-shell">
+      <div class="menu-head reveal">
+        <p class="kicker">O que sai da chapa</p>
+        <h2 class="section-title">Cardápio</h2>
+        <p class="menu-note">Prévia com os itens mais pedidos. Cardápio completo, fotos e promoções no pedido online.</p>
+        <a href="http://pedido.anota.ai/loja/chicago-burger-2?referer=gbp_anota" target="_blank" rel="noopener" class="btn btn-primary menu-cta">Ver cardápio completo e pedir</a>
+      </div>
+
+      <div class="menu-tabs" role="tablist" aria-label="Categorias do cardápio">
+        <button class="menu-tab is-active" role="tab" aria-selected="true" data-target="burgers">Burgers</button>
+        <button class="menu-tab" role="tab" aria-selected="false" data-target="combos">Combos</button>
+        <button class="menu-tab" role="tab" aria-selected="false" data-target="acompanhamentos">Acompanhamentos</button>
+        <button class="menu-tab" role="tab" aria-selected="false" data-target="bebidas">Bebidas</button>
+        <button class="menu-tab" role="tab" aria-selected="false" data-target="sobremesas">Sobremesas</button>
+      </div>
+
+      <div class="menu-panels">
+        <ul class="menu-list is-active" id="burgers" role="tabpanel">
+          <li class="menu-item reveal">
+            <div class="menu-item-head">
+              <h3>Chicago Burger</h3>
+              <span class="menu-dots" aria-hidden="true"></span>
+              <span class="menu-price">R$ 33</span>
+            </div>
+            <p>Pão brioche, blend de 180g, queijo muçarela, presunto, ovo, bacon, alface americana, tomate e maionese especial.</p>
+          </li>
+          <li class="menu-item reveal">
+            <div class="menu-item-head">
+              <h3>Vegas Burger</h3>
+              <span class="menu-dots" aria-hidden="true"></span>
+              <span class="menu-price">R$ 30</span>
+            </div>
+            <p>Pão australiano, blend de 180g, queijo cheddar, bacon, cebola caramelizada e maionese especial.</p>
+          </li>
+          <li class="menu-item reveal">
+            <div class="menu-item-head">
+              <h3>Smash Duplo Burger</h3>
+              <span class="menu-dots" aria-hidden="true"></span>
+              <span class="menu-price">R$ 28</span>
+            </div>
+            <p>Pão brioche, dois blends de 80g cada, queijo cheddar, bacon e maionese especial.</p>
+          </li>
+          <li class="menu-item reveal">
+            <div class="menu-item-head">
+              <h3>Dallas Burger</h3>
+              <span class="menu-dots" aria-hidden="true"></span>
+              <span class="menu-price">R$ 30</span>
+            </div>
+            <p>Pão artesanal, hambúrguer artesanal de picanha 200g, grelhado no char-broil, recheado com queijo muçarela.</p>
+          </li>
+        </ul>
+
+        <ul class="menu-list" id="combos" role="tabpanel" hidden>
+          <li class="menu-item reveal">
+            <div class="menu-item-head">
+              <h3>Chicago Burger + Batata + Bebida</h3>
+              <span class="menu-dots" aria-hidden="true"></span>
+              <span class="menu-price">R$ 46</span>
+            </div>
+            <p>Chicago Burger + batata frita + refrigerante lata.</p>
+          </li>
+          <li class="menu-item reveal">
+            <div class="menu-item-head">
+              <h3>Vegas Burger + Batata + Bebida</h3>
+              <span class="menu-dots" aria-hidden="true"></span>
+              <span class="menu-price">R$ 43</span>
+            </div>
+            <p>Vegas Burger + batata + bebida.</p>
+          </li>
+          <li class="menu-item reveal">
+            <div class="menu-item-head">
+              <h3>Smash Duplo Burger + Batata + Bebida</h3>
+              <span class="menu-dots" aria-hidden="true"></span>
+              <span class="menu-price">R$ 41</span>
+            </div>
+            <p>Nosso queridinho smash duplo, pronto pra ir pra sua casa, com batata e refrigerante lata.</p>
+          </li>
+          <li class="menu-item reveal">
+            <div class="menu-item-head">
+              <h3>Combo Casal</h3>
+              <span class="menu-dots" aria-hidden="true"></span>
+              <span class="menu-price">R$ 82</span>
+            </div>
+            <p>2 burgers + 2 batatas P + 2 refrigerantes lata. Você escolhe os burgers e as bebidas.</p>
+          </li>
+        </ul>
+
+        <ul class="menu-list" id="acompanhamentos" role="tabpanel" hidden>
+          <li class="menu-item reveal">
+            <div class="menu-item-head">
+              <h3>Batata Frita Média</h3>
+              <span class="menu-dots" aria-hidden="true"></span>
+              <span class="menu-price">R$ 12</span>
+            </div>
+            <p>Porção média de batata frita crocante.</p>
+          </li>
+          <li class="menu-item reveal">
+            <div class="menu-item-head">
+              <h3>Batata Frita Grande + Molho</h3>
+              <span class="menu-dots" aria-hidden="true"></span>
+              <span class="menu-price">R$ 16</span>
+            </div>
+            <p>Porção grande de batata frita acompanhada de molho.</p>
+          </li>
+          <li class="menu-item reveal">
+            <div class="menu-item-head">
+              <h3>Batata Frita Especial</h3>
+              <span class="menu-dots" aria-hidden="true"></span>
+              <span class="menu-price">R$ 20</span>
+            </div>
+            <p>Batata frita grande com queijo cheddar e bacon + maionese caseira.</p>
+          </li>
+        </ul>
+
+        <ul class="menu-list" id="bebidas" role="tabpanel" hidden>
+          <li class="menu-item reveal">
+            <div class="menu-item-head">
+              <h3>Refrigerante Lata</h3>
+              <span class="menu-dots" aria-hidden="true"></span>
+              <span class="menu-price">R$ 7</span>
+            </div>
+            <p>Guaraná Antarctica, Fanta Laranja ou Sprite Limão — 310ml.</p>
+          </li>
+          <li class="menu-item reveal">
+            <div class="menu-item-head">
+              <h3>Suco Integral Only</h3>
+              <span class="menu-dots" aria-hidden="true"></span>
+              <span class="menu-price">R$ 7</span>
+            </div>
+            <p>Laranja e maçã, ou uva e maçã — 300ml.</p>
+          </li>
+          <li class="menu-item reveal">
+            <div class="menu-item-head">
+              <h3>Soda Italiana Frutas Vermelhas</h3>
+              <span class="menu-dots" aria-hidden="true"></span>
+              <span class="menu-price">R$ 10</span>
+            </div>
+            <p>Soda italiana gelada com frutas vermelhas.</p>
+          </li>
+          <li class="menu-item reveal">
+            <div class="menu-item-head">
+              <h3>Cerveja Heineken</h3>
+              <span class="menu-dots" aria-hidden="true"></span>
+              <span class="menu-price">R$ 12</span>
+            </div>
+            <p>Heineken 330ml gelada.</p>
+          </li>
+        </ul>
+
+        <ul class="menu-list" id="sobremesas" role="tabpanel" hidden>
+          <li class="menu-item reveal">
+            <div class="menu-item-head">
+              <h3>Milk Shake Morango</h3>
+              <span class="menu-dots" aria-hidden="true"></span>
+              <span class="menu-price">R$ 20</span>
+            </div>
+            <p>Delicioso milk shake de creme americano.</p>
+          </li>
+          <li class="menu-item reveal">
+            <div class="menu-item-head">
+              <h3>Milk Shake de Ovomaltine</h3>
+              <span class="menu-dots" aria-hidden="true"></span>
+              <span class="menu-price">R$ 20</span>
+            </div>
+            <p>Delicioso milk shake de creme americano.</p>
+          </li>
+          <li class="menu-item reveal">
+            <div class="menu-item-head">
+              <h3>Milk Shake Nutella</h3>
+              <span class="menu-dots" aria-hidden="true"></span>
+              <span class="menu-price">R$ 22</span>
+            </div>
+            <p>Delicioso milk shake de creme americano.</p>
+          </li>
+          <li class="menu-item reveal">
+            <div class="menu-item-head">
+              <h3>Pudim</h3>
+              <span class="menu-dots" aria-hidden="true"></span>
+              <span class="menu-price">R$ 15</span>
+            </div>
+            <p>Pudim de leite ninho com calda de caramelo.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VITRINE (visual / gráfico, sem fotos) ============ -->
+  <section class="showcase" id="vitrine">
+    <div class="section-shell showcase-grid">
+      <div class="showcase-copy reveal">
+        <p class="kicker">Direção visual</p>
+        <h2 class="section-title">Fundo preto.<br>Luz na comida.<br>Sem enfeite.</h2>
+        <p class="about-text">Contraste alto, luz lateral, sombra marcada. É assim que a Chicago Burger aparece — no prato, na embalagem e na tela. Sem gradiente colorido, sem distração: o hambúrguer é a estrela.</p>
+        <a href="https://www.instagram.com/chicagoburger_/" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg class="icon-inline" aria-hidden="true"><use href="#icon-instagram"/></svg>
+          Seguir no Instagram
+        </a>
+      </div>
+      <div class="showcase-visual reveal" aria-hidden="true">
+        <svg viewBox="0 0 200 200" class="burger-mark">
+          <circle cx="100" cy="100" r="98" fill="#0a0a0a" stroke="#3a3d40" stroke-width="1"/>
+          <ellipse cx="100" cy="66" rx="52" ry="18" fill="#fff"/>
+          <rect x="48" y="78" width="104" height="10" rx="5" fill="#ff5a2b"/>
+          <path d="M44 96 q56 22 112 0 l-6 20 q-50 18 -100 0 z" fill="#e8e6e1"/>
+          <rect x="46" y="118" width="108" height="14" rx="7" fill="#1b1d20" stroke="#3a3d40"/>
+          <path d="M46 138 q54 20 108 0 l-4 18 q-50 16 -100 0 z" fill="#fff"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOCALIZAÇÃO ============ -->
+  <section class="location" id="localizacao">
+    <div class="section-shell location-grid">
+      <div class="location-copy reveal">
+        <p class="kicker">Onde fica</p>
+        <h2 class="section-title">Visite ou peça<br>até em casa.</h2>
+
+        <ul class="info-list">
+          <li>
+            <svg class="icon-inline" aria-hidden="true"><use href="#icon-pin"/></svg>
+            <span>St. Hab. Vicente Pires, loja 3 — Vicente Pires, Brasília · DF, 72006-100</span>
+          </li>
+          <li>
+            <svg class="icon-inline" aria-hidden="true"><use href="#icon-clock"/></svg>
+            <span>Seg a Sex · 11h às 23h30 <em>· Sáb e Dom · 18h às 23h30</em></span>
+          </li>
+          <li>
+            <svg class="icon-inline" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+            <a href="https://wa.me/5561981047360" target="_blank" rel="noopener">(61) 98104-7360</a>
+          </li>
+          <li>
+            <svg class="icon-inline" aria-hidden="true"><use href="#icon-instagram"/></svg>
+            <a href="https://www.instagram.com/chicagoburger_/" target="_blank" rel="noopener">@chicagoburger_</a>
+          </li>
+        </ul>
+
+        <div class="location-actions">
+          <a href="https://wa.me/5561981047360" target="_blank" rel="noopener" class="btn btn-primary">Chamar no WhatsApp</a>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=-15.8014952,-48.0171220" target="_blank" rel="noopener" class="btn btn-outline">
+            <svg class="icon-inline" aria-hidden="true"><use href="#icon-pin"/></svg>
+            Como chegar
+          </a>
+        </div>
+      </div>
+
+      <div class="location-map reveal">
+        <iframe
+          class="map-frame"
+          src="https://www.google.com/maps?q=Chicago+Burger,+St.+Hab.+Vicente+Pires+loja+3,+Vicente+Pires,+Bras%C3%ADlia+-+DF&z=16&output=embed"
+          title="Localização da Chicago Burger no Google Maps"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="section-shell footer-grid">
+    <a href="#topo" class="brand brand--footer" aria-label="Chicago Burger — início">
+      <svg class="brand-badge" viewBox="0 0 120 120" aria-hidden="true">
+        <circle cx="60" cy="60" r="58" fill="#050505" stroke="#fff" stroke-width="2"/>
+        <g class="badge-star" transform="translate(20,38)"><use href="#icon-star" width="12" height="12"/></g>
+        <g class="badge-star" transform="translate(84,38)"><use href="#icon-star" width="12" height="12"/></g>
+        <text x="60" y="47" text-anchor="middle" class="badge-chicago">CHICAGO</text>
+        <line x1="18" y1="53" x2="102" y2="53" stroke="#fff" stroke-width="1.4"/>
+        <text x="60" y="72" text-anchor="middle" class="badge-burger">BURGER</text>
+        <line x1="30" y1="80" x2="90" y2="80" stroke="#fff" stroke-width="1"/>
+      </svg>
+      <span class="brand-word">Chicago<em>Burger</em></span>
+    </a>
+
+    <nav class="footer-nav" aria-label="Rodapé">
+      <a href="#sobre">Sobre</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#vitrine">Vitrine</a>
+      <a href="#localizacao">Localização</a>
+    </nav>
+
+    <div class="footer-social">
+      <a href="https://www.instagram.com/chicagoburger_/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon-inline" aria-hidden="true"><use href="#icon-instagram"/></svg></a>
+      <a href="https://wa.me/5561981047360" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon-inline" aria-hidden="true"><use href="#icon-whatsapp"/></svg></a>
+    </div>
+  </div>
+  <div class="section-shell footer-bottom">
+    <p>© <span id="ano"></span> Chicago Burger. American Urban Burger.</p>
+    <p class="footer-fine">Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Voltar ao topo">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l-7 7h4v7h6v-7h4z"/></svg>
+</button>
+
+<!-- ============ SPRITE DE ÍCONES ============ -->
+<svg class="sprite" aria-hidden="true">
+  <symbol id="icon-star" viewBox="0 0 24 24"><path d="M12 2l2.6 6.9L22 9.6l-5.5 4.6L18.2 22 12 17.8 5.8 22l1.7-7.8L2 9.6l7.4-.7z"/></symbol>
+  <symbol id="icon-flame" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 7a3 3 0 106 0c1.5 1 3 3 3 6a7 7 0 11-14 0c0-5 3-6 4-9 .5 1 1 2 1 3 1-2 1.5-4.5 2-7z"/></symbol>
+  <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></symbol>
+  <symbol id="icon-clock" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm.75 5v5.25l4.5 2.6-.75 1.3-5.25-3V7z"/></symbol>
+  <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 01-3.6-3.2c-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5S9.9 7.6 9.7 7.1c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.2 5 4.4 2.5 1 2.5.7 2.9.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.4zM12 2a10 10 0 018.6 15.1L22 22l-5-1.3A10 10 0 1112 2z"/></symbol>
+  <symbol id="icon-instagram" viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm0 2a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM17.75 6a1 1 0 110 2 1 1 0 010-2z"/></symbol>
+</svg>
+
+<script src="js/main.js"></script>
+</body>
+</html>
