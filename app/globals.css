@@ -1,0 +1,187 @@
+@import "tailwindcss";
+
+/* ============================================================
+   CHICAGO BURGER - American Urban Burger
+   Sistema: preto + branco, tipografia condensada, grafismo de
+   estrelas e linhas herdado da marca. Acento âmbar (chapa/fogo)
+   usado com moderação.
+
+   Tokens migrados do CSS original para o @theme do Tailwind v4.
+   ============================================================ */
+
+@theme {
+  /* ---- cor: paleta da marca, preservada do site original ---- */
+  --color-ink: #050505;
+  --color-ink-2: #0f1011;
+  --color-ink-3: #17181a;
+  --color-surface: #1b1d20;
+  --color-line: #3a3d40;
+  --color-line-soft: rgba(255, 255, 255, 0.1);
+  --color-paper: #f4f2ec;
+  --color-muted: #9a9d9f;
+  --color-accent: #ff5a2b;
+  --color-accent-2: #ff2f00;
+
+  /* ---- tipografia: alimentada por next/font (layout.tsx) ---- */
+  --font-display: var(--font-anton), "Arial Narrow", sans-serif;
+  --font-sans: var(--font-oswald), "Arial Narrow", sans-serif;
+  --font-body: var(--font-barlow), "Segoe UI", sans-serif;
+
+  /* ---- escala fluida: um único sistema para a página toda ---- */
+  --text-sm: clamp(0.8rem, 0.76rem + 0.2vw, 0.9rem);
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.1rem);
+  --text-lg: clamp(1.2rem, 1.05rem + 0.75vw, 1.5rem);
+  --text-xl: clamp(1.6rem, 1.3rem + 1.5vw, 2.4rem);
+  --text-2xl: clamp(2.4rem, 1.7rem + 3.5vw, 4.2rem);
+  --text-3xl: clamp(3.2rem, 2rem + 6vw, 7.5rem);
+
+  /* ---- easing ---- */
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ============================================================
+   IMPORTANTE: tudo abaixo fica dentro de @layer.
+   CSS sem camada vence @layer utilities na cascata do Tailwind v4.
+   Um `a { color: inherit }` solto fazia todo link ignorar utilitários
+   de cor (text-ink, text-accent...), deixando o CTA branco no branco.
+   ============================================================ */
+
+@layer base {
+  :root {
+    --header-h: 4.5rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-h);
+  }
+
+  body {
+    background: var(--color-ink);
+    color: #fff;
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+
+  /* A11y preservada do site original: respeita quem pediu menos motion.
+     Os componentes também checam useReducedMotion() no JS. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .skip-link {
+    position: absolute;
+    left: -999px;
+    top: 0;
+    z-index: 200;
+    background: #fff;
+    color: var(--color-ink);
+    padding: 0.75rem 1.25rem;
+    border-radius: 0 0 0.5rem 0;
+  }
+  .skip-link:focus {
+    left: 0;
+  }
+
+  /* grão de filme: fixo, nunca sobre conteúdo rolando */
+  .grain {
+    position: fixed;
+    inset: 0;
+    z-index: 90;
+    pointer-events: none;
+    opacity: 0.045;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .section-shell {
+    width: 100%;
+    max-width: 76rem;
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 4vw, 3rem);
+  }
+
+  /* tipografia da marca dentro do badge SVG */
+  .badge-chicago {
+    font-family: var(--font-display);
+    font-size: 15.5px;
+    fill: #fff;
+    letter-spacing: 0.02em;
+  }
+  .badge-burger {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    font-weight: 600;
+    fill: #fff;
+    letter-spacing: 0.14em;
+  }
+
+  /* "BURGER" vazado no hero, herdado do original */
+  @supports (-webkit-text-stroke: 1px #fff) {
+    .hero-stroke {
+      color: transparent;
+      -webkit-text-stroke: 1px #fff;
+    }
+  }
+
+  /* pontilhado que liga o nome ao preço no cardápio */
+  .menu-dots {
+    flex: 1;
+    border-bottom: 2px dotted var(--color-line);
+    transform: translateY(-0.35em);
+  }
+
+  .scroll-cue-dot {
+    animation: scrollCue 1.8s ease-in-out infinite;
+  }
+}
+
+/* ---------- keyframes ---------- */
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes scrollCue {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  70% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 0;
+  }
+}

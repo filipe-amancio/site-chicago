@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="31" fill="#050505" stroke="#fff" stroke-width="1.5"/>
+  <circle cx="32" cy="32" r="26" fill="none" stroke="#fff" stroke-width="0.75" opacity="0.5"/>
+  <path d="M32 12 L34.2 18.6 L41 18.6 L35.5 22.6 L37.6 29.2 L32 25.1 L26.4 29.2 L28.5 22.6 L23 18.6 L29.8 18.6 Z" fill="#ff5a2b"/>
+  <text x="32" y="47" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="22" fill="#fff" letter-spacing="-1">CB</text>
+</svg>
