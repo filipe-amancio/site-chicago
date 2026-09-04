@@ -1,0 +1,12 @@
+{
+  "//": "Copie este arquivo para a RAIZ do projeto como .mcp.json para dar ao Claude Code um loop visual (navegar, screenshot, inspecionar DOM) enquanto constroi o site. Escopo de projeto: fica versionado junto e vale para quem clonar o repo. Ja existe uma configuracao equivalente em escopo de usuario nesta maquina (~/.claude.json) - use este arquivo so se quiser a config viajando com o projeto.",
+  "//windows": "A forma abaixo (cmd /c npx) e para Windows. Em macOS/Linux troque por: \"command\": \"npx\", \"args\": [\"-y\", \"@playwright/mcp@latest\"]",
+  "mcpServers": {
+    "playwright": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@playwright/mcp@latest"],
+      "env": {}
+    }
+  }
+}
